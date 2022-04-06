@@ -1,6 +1,6 @@
-from src.analysis.format_histograms import format_histograms
-from pandas import DataFrame
+from DSCI_310_Group_10_Package.format_histograms import format_histograms
 import pytest
+from pandas import DataFrame
 
 @pytest.fixture
 def toy_dataset():

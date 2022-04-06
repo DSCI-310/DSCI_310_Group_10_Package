@@ -1,7 +1,7 @@
+from DSCI_310_Group_10_Package.alpha_tuning import ridge_alpha_tuning
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 import pytest
-from src.analysis.alpha_tuning import ridge_alpha_tuning
 from sklearn.pipeline import Pipeline, make_pipeline
 from sklearn.preprocessing import StandardScaler
 

@@ -1,8 +1,8 @@
-from src.analysis.inv_outcome_plot import inv_outcome_plot
-import pytest
+from DSCI_310_Group_10_Package.inv_outcome_plot import inv_outcome_plot
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import pytest
 
 @pytest.fixture
 def toy_dataset():

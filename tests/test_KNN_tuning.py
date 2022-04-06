@@ -6,7 +6,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 import numpy as np
-from src.analysis.KNN_tuning import KNN_tuning
+from DSCI_310_Group_10_Package.KNN_tuning import KNN_tuning
+
 
 def test_KNN_fullfuc():
     results_dict = {
