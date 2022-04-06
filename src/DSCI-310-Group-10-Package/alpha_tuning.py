@@ -1,4 +1,10 @@
-"""
+import pandas as pd
+import sklearn
+from sklearn.pipeline import make_pipeline
+from sklearn.linear_model import RidgeCV
+
+def ridge_alpha_tuning(alpha, processor, trainx, trainy, cv=10):
+    """
     A function used to format a pandas generic histograms
 
     Parameters
@@ -21,25 +27,15 @@
         if the trainx is not the correct type
         if the trainy is not the correct type
     """
-from alpha_tuning.py import ridge_alpha_tuning
-
-'''
-    A function used to format a pandas generic histograms
-    
-    Parameters
-    ----------
-    df : Pandas DataFrame
-        Dataframe with n features to map.
-    texts : dictionary
-        A dictionary with labels for each histogram. Should
-        consist of xaxes, titles, and yaxes.
-    fontsize : int
-        fontsize of the histograms
-    
-    Raises
-    ------
-    ValueError:
-        if the texts parameter is empty.
-    '''
-from format_histograms.py import format_histograms
-
+    if not isinstance(alpha, list):
+        raise TypeError("alpha is not a list")
+    if not isinstance(trainx, pd.DataFrame):
+        raise TypeError("train_x should be data frame")
+    if not isinstance(trainy, pd.Series):
+        raise TypeError("train_y should be data frame")
+    if not isinstance(cv,int):
+        raise TypeError("cv should be an integer")
+    ridge_cv_pipe = make_pipeline(processor, RidgeCV(alphas=alpha, cv=cv))
+    ridge_cv_pipe.fit(trainx, trainy)
+    best_alpha = ridge_cv_pipe.named_steps["ridgecv"].alpha_
+    return best_alpha
