@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "DSCI-310-Group-10-Package"
+version = "0.1.0"
+description = "This package contains the functions for the Statistics Canada investment income analysis,by group 10"
+authors = ["Harry Zhang Ahmed Rizk Mahdi Heydar Nikko Dumrique"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
