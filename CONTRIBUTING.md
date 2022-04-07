@@ -1,7 +1,10 @@
 # Contributing
 
 Contributions are welcome, and they are greatly appreciated! Every little bit
-helps, and credit will always be given.
+helps, and credit will always be given. If you would like to contribute, please follow the 
+practices below by creating a new branch from main where you can make any changes. This will allow
+changes to be processed through a pull request to ensure correctness.
+
 
 ## Types of Contributions
 
