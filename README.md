@@ -1,6 +1,10 @@
 # DSCI-310-Group-10-Package
 
-This package contains the functions for the Statistics Canada investment income analysis,by group 10
+DSCI-310-Group-10-Package is a Python package for the investment income outcome analysis done for DSCI310. This package is largely dependent on the scikit-learn and matplotlib packages, and is distributed under the MIT License.
+
+The functions in this package have roles related to hyperparamater optimizations for specific machine learning models, and plot the results obtained.
+
+The main project where this package is used can be found in the following GitHub Repository: https://github.com/DSCI-310/DSCI-310-Group-10
 
 ## Installation
 
