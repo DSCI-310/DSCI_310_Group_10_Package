@@ -1,3 +1,3 @@
 # read version from installed package
 from importlib.metadata import version
-__version__ = version("DSCI-310-Group-10-Package")
+__version__ = version("DSCI_310_Group_10_Package")

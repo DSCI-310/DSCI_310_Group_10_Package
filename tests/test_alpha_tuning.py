@@ -1,4 +1,4 @@
-from DSCI_310_Group_10_Package.alpha_tuning import ridge_alpha_tuning
+from src.DSCI_310_Group_10_Package.alpha_tuning import ridge_alpha_tuning
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 import pytest
