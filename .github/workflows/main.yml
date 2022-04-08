@@ -65,16 +65,17 @@ jobs:
     - name: Use Python Semantic Release to prepare release
       env:
         # This token is created automatically by GH Actions
-        GH_TOKEN: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
+        GH_TOKEN: '{% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}'
       run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           poetry run semantic-release publish
+
     - name: Publish to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
-        password: {% raw %}${{ secrets.TEST_PYPI_API_TOKEN }}{% endraw %}
+        password: '{% raw %}${{ secrets.TEST_PYPI_API_TOKEN }}{% endraw %}'
         repository_url: https://test.pypi.org/legacy/
 
     - name: Test install from TestPyPI
@@ -82,21 +83,10 @@ jobs:
           pip install \
           --index-url https://test.pypi.org/simple/ \
           --extra-index-url https://pypi.org/simple \
-          dsci-310-group-10-pakage
+          dsci-310-group-10-package
+
     - name: Publish to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
-        password: {% raw %}${{ secrets.PYPI_API_TOKEN }}{% endraw %}
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+        password: '{% raw %}${{ secrets.PYPI_API_TOKEN }}{% endraw %}'
