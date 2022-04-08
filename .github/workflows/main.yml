@@ -43,7 +43,6 @@ jobs:
 
     # Set up operating system
     runs-on: ubuntu-latest
-
     # Define job steps
     steps:
     - name: Set up Python 3.9
