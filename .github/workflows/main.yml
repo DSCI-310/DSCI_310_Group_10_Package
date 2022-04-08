@@ -34,10 +34,6 @@ jobs:
     - name: install package
       run: poetry install
       
-    - uses: actions/checkout@v2
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
-      
     - name: Build package
       run: poetry build
     
