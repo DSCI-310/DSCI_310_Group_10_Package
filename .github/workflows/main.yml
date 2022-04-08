@@ -24,7 +24,7 @@ jobs:
       run: poetry install
 
     - name: Test with pytest
-      run: poetry run pytest tests/ --cov={{ cookiecutter.package_name }} --cov-report=xml
+      run: poetry run pytest tests/ --cov=DSCI_310_Group_10_Paackage --cov-report=xml
 
     - name: Use Codecov to track coverage
       uses: codecov/codecov-action@v2
