@@ -6,7 +6,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u"DSCI_310_Group_10_Package"
+project = u"DSCI-310-Group-10-Package"
 copyright = u"2022, Harry Zhang Ahmed Rizk Mahdi Heydar Nikko Dumrique"
 author = u"Harry Zhang Ahmed Rizk Mahdi Heydar Nikko Dumrique"
 
