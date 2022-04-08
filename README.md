@@ -1,6 +1,6 @@
 # DSCI-310-Group-10-Package
 
-DSCI-310-Group-10-Package is a Python package for the investment income outcome analysis done for DSCI310. This package is largely dependent on the scikit-learn and matplotlib packages, and is distributed under the MIT License.
+DSCI_310_Group_10_Package is a Python package for the investment income outcome analysis done for DSCI310. This package is largely dependent on the scikit-learn and matplotlib packages, and is distributed under the MIT License.
 
 The functions in this package have roles related to hyperparamater optimizations for specific machine learning models, and plot the results obtained.
 
