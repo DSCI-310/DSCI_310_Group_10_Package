@@ -1,6 +1,6 @@
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
-from DSCI_310_Group_10_Package.split_drop import split_drop
+from src.DSCI_310_Group_10_Package.split_drop import split_drop
 import pytest
 
 def test_split_drop_correct():

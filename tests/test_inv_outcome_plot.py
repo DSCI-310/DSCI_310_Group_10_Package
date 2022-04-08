@@ -1,4 +1,4 @@
-from DSCI_310_Group_10_Package.inv_outcome_plot import inv_outcome_plot
+from src.DSCI_310_Group_10_Package.inv_outcome_plot import inv_outcome_plot
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
